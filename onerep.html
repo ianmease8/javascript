@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>one rep max calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="#" class="active">one rep max calculator </a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Find your one rep max</h1>
+    </header>
+    <main>
+        <section id="One Rep Max calculator">
+            <article>
+                <div>
+                    <label for="addend1">Weight:</label>
+                    <input type="text" id="addend1" name="addend1">
+                </div>
+                <div>
+                    <label for="addend2">Reps:</label>
+                    <input type="text" id="addend2" name="addend2">
+                </div>
+                <div>
+                    <input type="button" id="findMax" value="Find Your Max">
+                </div>
+                <div>
+                    <label for="sum">Your Max is:</label>
+                    <input type="text" id="sum" name="sum" disabled>
+                </div>
+                <p>
+                    *disclaimer, your one rep max is &plusmn 5 pounds of the returned value
+                    and is more accurate the higher the Weight
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Finding Your Max | Lets Get BIG
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/onerep.js"></script>
+    <script src="scripts/date.js"></script>
+</body>
+
+</html>
