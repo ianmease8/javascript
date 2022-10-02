@@ -13,6 +13,15 @@ function addNumbers() {
     document.querySelector('#sum').value = result;
 }
 
+const fs = require(fs)
+
+let data = findMax()
+
+fs.writeFile('yourworkouts.txt', data, (err) => {
+      
+    if (err) throw err;
+})
+
 document.querySelector('#findMax').addEventListener('click', addNumbers);
 
  
